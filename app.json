@@ -1,11 +1,9 @@
 {
-  "expo": {
-    "name": "todo",
-    "slug": "todo",
-    "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
-  },
-  "name": "todo"
+  "web": {
+    "build": {
+      "babel": {
+        "include": ["react-router-native"]
+      }
+    }
+  }
 }

@@ -1,13 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState} from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import Button from './components/Button/Button';
+import Home from './components/Home/Home';
+import ListModal from './components/Modal/ListModal';
 
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+
+      <View style={styles.container}>
+     <ListModal/>
+      </View>
+
+
   );
 }
 
